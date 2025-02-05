@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body {
+    background-color: #121212;
+    color: #e0e0e0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+.container {
+    text-align: center;
+    width: 100%;
+    max-width: 600px;
+}
+
+h1 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.jokes-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.joke-card {
+    background: #1e1e1e;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(255, 255, 255, 0.1);
+    transition: transform 0.2s, background 0.2s;
+    text-align: left;
+    max-width: 500px;
+    margin: 0 auto;
+    word-wrap: break-word;
+    line-height: 1.4;
+    position: relative;
+}
+
+.joke-card p {
+    margin: 0;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 2; /* Ограничение строк */
+    -webkit-box-orient: vertical;
+}
+
+.joke-card.expanded p {
+    -webkit-line-clamp: unset;
+}
+
+.toggle-btn {
+    background: none;
+    border: none;
+    color: #4CAF50;
+    font-size: 0.9rem;
+    cursor: pointer;
+    margin-top: 5px;
+    transition: color 0.2s;
+}
+
+.toggle-btn:hover {
+    color: #66bb6a;
+}
