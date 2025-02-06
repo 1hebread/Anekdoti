@@ -56,10 +56,6 @@ h1 {
     -webkit-box-orient: vertical;
 }
 
-.joke-card.expanded p {
-    -webkit-line-clamp: unset;
-}
-
 .toggle-btn {
     background: none;
     border: none;
